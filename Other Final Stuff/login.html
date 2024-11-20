@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Management</title>
+    <title>Login</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Course Management</h1>
+            <h1>Login</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="add-course.html" id="add-course-link">Add New Course</a></li>
-                    <li><a href="login.html" id="login-link">Login</a></li>
-                    <li><a href="register.html" id="register-link">Register</a></li>
-                    <li><a href="index.html" id="logout-link">Logout</a></li>
+                    <li><a href="register.html">Register</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h2>Available Courses</h2>
-            <div id="courses-list"></div>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                <button type="submit">Login</button>
+            </form>
         </main>
         <script src="script.js"></script>
     </div>
 </body>
 </html>
-
-

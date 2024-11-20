@@ -1,11 +1,24 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
     background-color: #f4f4f4;
 }
 
-h1, h2 {
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
     color: #333;
 }
 
@@ -19,8 +32,21 @@ nav ul li {
     margin-right: 10px;
 }
 
-form {
-    margin-top: 20px;
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #bbb;
+}
+
+main {
+    text-align: left;
 }
 
 label {
@@ -32,6 +58,8 @@ input, textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
@@ -41,9 +69,10 @@ button {
     border: none;
     cursor: pointer;
     margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #555;
 }
-
