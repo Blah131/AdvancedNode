@@ -9,11 +9,13 @@ app.set('view engine', 'ejs');
 
 // listen for requests
 
-app.listen(3000);
+app.listen(3001);
 
 app.get('/', (req, res) => {
     const blogs = [
-        
+        {title: 'Yoshi fidns eggs', snippet: 'Lorem ipsum dolor sit amet consectetur'},
+        {title: 'Mario finds stars', snippet: 'Lorem ipsum dolor sit amet consectetur'},
+        {title: 'How to defeat bowser', snippet: 'Lorem ipsum dolor sit amet consectetur'},
     ];
     //res.send('<p>homepage</p>');
     res.render('index', { title: 'Home', blogs });
